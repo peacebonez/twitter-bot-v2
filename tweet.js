@@ -1,4 +1,4 @@
-export const tweet = () => {
+const tweet = () => {
   let text =
     "Heyo this is a test tweet with a twitter bot!  Here's my portfolio shorturl.at/kDFTV";
   Twitter.post("statuses/update", { status: text }, (err, res) => {
@@ -8,3 +8,5 @@ export const tweet = () => {
     console.error(err);
   });
 };
+
+module.exports = tweet;

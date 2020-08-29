@@ -1,8 +1,8 @@
 const config = require("./config");
 const twit = require("twit");
 const Twitter = new twit(config);
-import { tweet } from "./tweet";
-import { retweet } from "./retweet";
+const tweet = require("./tweet");
+const retweet = require("./retweet");
 
 function selfAdvertise(query, result_type, count) {
   let params = {
@@ -51,11 +51,11 @@ function selfAdvertise(query, result_type, count) {
 
 setInterval(
   () => selfAdvertise("entry level web developer", "recent", 5),
-  86400
+  86400000
 );
-setInterval(() => selfAdvertise("react developer", 10, "recent"), 140400);
-setInterval(() => selfAdvertise("web development", 10, "recent"), 94600);
-setInterval(() => selfAdvertise("web dev jobs", 10, "recent"), 106400);
+setInterval(() => selfAdvertise("react developer", 10, "recent"), 14000000);
+setInterval(() => selfAdvertise("web development", 10, "recent"), 94600000);
+setInterval(() => selfAdvertise("web dev jobs", 10, "recent"), 10600000);
 
 // setInterval(retweet, 15000);
 // setInterval(tweet, 1000);

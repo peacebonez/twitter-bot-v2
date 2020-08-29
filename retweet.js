@@ -1,4 +1,4 @@
-export const retweet = () => {
+const retweet = () => {
   let params = {
     q: "#tech",
     result_type: "recent",
@@ -20,3 +20,5 @@ export const retweet = () => {
     }
   });
 };
+
+module.exports = retweet;
