@@ -1,8 +1,6 @@
 const config = require("./config");
 const twit = require("twit");
 const Twitter = new twit(config);
-const tweet = require("./tweet");
-const retweet = require("./retweet");
 
 function selfAdvertise(query, result_type, count) {
   let params = {
