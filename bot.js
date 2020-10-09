@@ -14,10 +14,10 @@ function selfAdvertise(query, result_type, count) {
   //to keep from spamming the same exact tweet
   const quoteGen = () => {
     const text = [
-      "Hi I made this bot to reach out for a web developer gig.  Here's my portfolio site shorturl.at/kDFTV",
-      "Hey what's up, I made this bot to get broader reach to find a web developer gig. Here's my portfolio site shorturl.at/kDFTV",
-      "Hey I'm Kevin and I made this bot to get broader reach to find a web developer gig. Here's my portfolio site shorturl.at/kDFTV",
-      "When LinkedIn and Indeed aren't working, just make a bot!  I'm seeking a junior web developer job. Here's my portfolio site shorturl.at/kDFTV",
+      "Hi I made this bot to reach out for a web developer gig.  Here's my portfolio site https://kevin-pariso-portfolio.netlify.app/",
+      "Hey what's up, I made this bot to get broader reach to find a web developer gig. Here's my portfolio site https://kevin-pariso-portfolio.netlify.app/",
+      "Hey I'm Kevin and I made this bot to get broader reach to find a web developer gig. Here's my portfolio site https://kevin-pariso-portfolio.netlify.app/",
+      "When LinkedIn and Indeed aren't working, just make a bot!  I'm seeking a junior web developer job. Here's my portfolio site https://kevin-pariso-portfolio.netlify.app/",
     ];
     return text[Math.floor(Math.random() * text.length)];
   };
